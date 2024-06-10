@@ -26,8 +26,8 @@ def eval_queue(q, rank, out_dict, mevis_pred_path):
 
         exp_name = f'{vid_name}_{exp}'
 
-        if not os.path.exists(f'{mevis_pred_path}/{vid_name}'):
-            print(f'{vid_name} not found')
+        if not os.path.exists(f'{mevis_pred_path}/{vid_name}/{exp}'):
+            print(f'{exp_name} not found')
             out_dict[exp_name] = [0, 0]
             continue
 
